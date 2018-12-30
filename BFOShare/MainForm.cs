@@ -94,6 +94,9 @@ namespace BFOShare
                 //图标显示在托盘区
                 notifyIcon1.Visible = true;
             }
+            else if(WindowState==FormWindowState.Maximized){
+            	
+            }
             else{
             	//保存下当前配置
             	saveIni();
