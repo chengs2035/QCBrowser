@@ -21,14 +21,7 @@ namespace BFOShare
 		static string inifilepath="localdata.ini";
 		public MainForm()
 		{
-			//
-			// The InitializeComponent() call is required for Windows Forms designer support.
-			//
 			InitializeComponent();
-			
-			//
-			// TODO: Add constructor code after the InitializeComponent() call.
-			//
 		}
 		void NotifyIcon1MouseDoubleClick(object sender, MouseEventArgs e)
 		{
@@ -89,7 +82,7 @@ namespace BFOShare
 			//IniHelper.IniHelper.Write(inifilepath,"WinFormIni","url","http://www.djc8.cn","页面url地址的");
 			IniHelper.IniHelper.Write(inifilepath,"WinFormIni","width",this.Width.ToString(),"窗口宽度");
 			IniHelper.IniHelper.Write(inifilepath,"WinFormIni","heigth",this.Height.ToString(),"窗口高度");
-			IniHelper.IniHelper.Write(inifilepath,"WinFormIni","title","Sharep ALM Browser","窗口标题");
+			//IniHelper.IniHelper.Write(inifilepath,"WinFormIni","title","Sharep ALM Browser","窗口标题");
 		}
 		void MainFormSizeChanged(object sender, EventArgs e)
 		{
