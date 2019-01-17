@@ -73,6 +73,7 @@ namespace BFOShare
 			}
 			if(title!=""){
 				this.Text=title;
+				notifyIcon1.Text=title;
 			}
 			if(url!=""){
 				this.wbForm.Url=new System.Uri(url);
