@@ -33,7 +33,7 @@ namespace BFOShare
 				//任务栏区显示图标
 				this.ShowInTaskbar = true;
 				//托盘区图标隐藏
-				notifyIcon1.Visible = false;
+				notifyIcon1.Visible = true;
 			}
 		}
 
@@ -55,7 +55,7 @@ namespace BFOShare
 				if(fs!=null){
 					fs.Flush();
 					fs.Close();
-					IniHelper.IniHelper.Write(inifilepath,"WinFormIni","url","http://www.djc8.cn","页面url地址的");
+					IniHelper.IniHelper.Write(inifilepath,"WinFormIni","url","https://www.djc8.cn","页面url地址的");
 					IniHelper.IniHelper.Write(inifilepath,"WinFormIni","width","1300","窗口宽度");
 					IniHelper.IniHelper.Write(inifilepath,"WinFormIni","heigth","700","窗口高度");
 					IniHelper.IniHelper.Write(inifilepath,"WinFormIni","title","Sharep ALM Browser","窗口标题");
@@ -117,7 +117,7 @@ namespace BFOShare
 				//任务栏区显示图标
 				this.ShowInTaskbar = true;
 				//托盘区图标隐藏
-				notifyIcon1.Visible = false;
+				notifyIcon1.Visible = true;
 			}
 		}
 		void ToolStripMenuItem2Click(object sender, EventArgs e)
