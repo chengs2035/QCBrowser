@@ -24,6 +24,7 @@ namespace BFOShare
 		private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
 		private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
+		private System.Windows.Forms.ToolStripMenuItem tsmiRestart;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -58,6 +59,7 @@ namespace BFOShare
 			this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
 			this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
+			this.tsmiRestart = new System.Windows.Forms.ToolStripMenuItem();
 			this.contextMenuStrip1.SuspendLayout();
 			this.barRightMenu.SuspendLayout();
 			this.SuspendLayout();
@@ -84,22 +86,24 @@ namespace BFOShare
 			// 
 			this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
 			this.toolStripMenuItem1,
+			this.tsmiRestart,
 			this.toolStripMenuItem2});
 			this.contextMenuStrip1.Name = "contextMenuStrip1";
-			this.contextMenuStrip1.Size = new System.Drawing.Size(101, 48);
+			this.contextMenuStrip1.Size = new System.Drawing.Size(153, 92);
 			this.contextMenuStrip1.Text = "显示";
+			this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.ContextMenuStrip1Opening);
 			// 
 			// toolStripMenuItem1
 			// 
 			this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-			this.toolStripMenuItem1.Size = new System.Drawing.Size(100, 22);
+			this.toolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
 			this.toolStripMenuItem1.Text = "显示";
 			this.toolStripMenuItem1.Click += new System.EventHandler(this.ToolStripMenuItem1Click);
 			// 
 			// toolStripMenuItem2
 			// 
 			this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-			this.toolStripMenuItem2.Size = new System.Drawing.Size(100, 22);
+			this.toolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
 			this.toolStripMenuItem2.Text = "退出";
 			this.toolStripMenuItem2.Click += new System.EventHandler(this.ToolStripMenuItem2Click);
 			// 
@@ -134,6 +138,13 @@ namespace BFOShare
 			// 
 			this.toolStripTextBox1.Name = "toolStripTextBox1";
 			this.toolStripTextBox1.Size = new System.Drawing.Size(100, 23);
+			// 
+			// tsmiRestart
+			// 
+			this.tsmiRestart.Name = "tsmiRestart";
+			this.tsmiRestart.Size = new System.Drawing.Size(152, 22);
+			this.tsmiRestart.Text = "重启";
+			this.tsmiRestart.Click += new System.EventHandler(this.TsmiRestartClick);
 			// 
 			// MainForm
 			// 

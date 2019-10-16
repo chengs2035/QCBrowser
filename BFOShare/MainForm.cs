@@ -130,5 +130,16 @@ namespace BFOShare
             }
             
 		}
+		void ContextMenuStrip1Opening(object sender, System.ComponentModel.CancelEventArgs e)
+		{
+	
+		}
+		void TsmiRestartClick(object sender, EventArgs e)
+		{ 
+			this.Dispose();
+            this.Close();
+			//Application.Exit();
+			System.Diagnostics.Process.Start(System.Reflection.Assembly.GetExecutingAssembly().Location);
+		}
 	}
 }
